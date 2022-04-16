@@ -1,20 +1,21 @@
-print('\nОпределение новых парт в математических классах\n')
+print('\nОпределение количества новых парт в математических классах\n')
 
-a = 30
-b = 23
-c = 39
+class_room_A = int(input('Введите количество учеников в классе А : '))
+class_room_B = int(input('Введите количество учеников в классе В : '))
+class_room_C = int(input('Введите количество учеников в классе С : '))
 
-# print(a //+ 1 or a % 2)
-# print(b //+ 1 or a % 2)
-# print(c //+ 1 or a % 2)
+print('Общее количество парт :', end= '' )
+print(class_room_A // 2 + class_room_B // 2 + class_room_C // 2 + class_room_A % 2 + class_room_B % 2 + class_room_C % 2)
 
-# print(a % 2 or a // 2 + 1)
-# print(b % 2 or b // 2 + 1)
-# print(c % 2 or c // 2 + 1)
+print('Количество парт в классе А :', end= '' )
+print(class_room_A // 2 + class_room_A % 2)
+
+print('Количество парт в классе B :', end= '' )
+print(class_room_B // 2 + class_room_B % 2)
+
+print('Количество парт в классе C :', end= '' )
+print(class_room_C // 2 + class_room_C % 2)
+
+print('Завершение вычисления')
 
 
-print(a // 2 + b // 2 + c // 2 + a % 2 + b % 2 +c % 2)
-print(a // 2 + a % 2)
-print(b // 2 + b % 2)
-print(c // 2 + c % 2)
-print(b % 2)
